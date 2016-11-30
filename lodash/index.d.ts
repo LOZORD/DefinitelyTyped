@@ -1602,7 +1602,7 @@ declare module _ {
             array: List<T>,
             predicate?: ListIterator<T, boolean>,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1611,7 +1611,7 @@ declare module _ {
             array: List<T>,
             predicate?: string,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1620,7 +1620,7 @@ declare module _ {
             array: List<T>,
             predicate?: W,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
     }
 
     interface LoDashImplicitArrayWrapper<T> {
@@ -1630,7 +1630,7 @@ declare module _ {
         findIndex(
             predicate?: ListIterator<T, boolean>,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1638,7 +1638,7 @@ declare module _ {
         findIndex(
             predicate?: string,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1646,7 +1646,7 @@ declare module _ {
         findIndex<W>(
             predicate?: W,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
     }
 
     interface LoDashImplicitObjectWrapper<T> {
@@ -1656,7 +1656,7 @@ declare module _ {
         findIndex<TResult>(
             predicate?: ListIterator<TResult, boolean>,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1664,7 +1664,7 @@ declare module _ {
         findIndex(
             predicate?: string,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
 
         /**
          * @see _.findIndex
@@ -1672,7 +1672,7 @@ declare module _ {
         findIndex<W>(
             predicate?: W,
             fromIndex?: number
-        ): number;
+        ): number | undefined;
     }
 
     interface LoDashExplicitArrayWrapper<T> {
@@ -1682,7 +1682,7 @@ declare module _ {
         findIndex(
             predicate?: ListIterator<T, boolean>,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
 
         /**
          * @see _.findIndex
@@ -1690,7 +1690,7 @@ declare module _ {
         findIndex(
             predicate?: string,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
 
         /**
          * @see _.findIndex
@@ -1698,7 +1698,7 @@ declare module _ {
         findIndex<W>(
             predicate?: W,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
     }
 
     interface LoDashExplicitObjectWrapper<T> {
@@ -1708,7 +1708,7 @@ declare module _ {
         findIndex<TResult>(
             predicate?: ListIterator<TResult, boolean>,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
 
         /**
          * @see _.findIndex
@@ -1716,7 +1716,7 @@ declare module _ {
         findIndex(
             predicate?: string,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
 
         /**
          * @see _.findIndex
@@ -1724,7 +1724,7 @@ declare module _ {
         findIndex<W>(
             predicate?: W,
             fromIndex?: number
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number | undefined>;
     }
 
     //_.findLastIndex
