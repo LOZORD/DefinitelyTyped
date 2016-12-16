@@ -36,6 +36,7 @@ interface DoneFn extends Function {
 }
 
 declare function spyOn(object: any, method: string): jasmine.Spy;
+declare function spyOnProperty(object: any, property: string, accessType?: string): jasmine.Spy;
 
 declare function runs(asyncMethod: Function): void;
 declare function waitsFor(latchMethod: () => boolean, failureMessage?: string, timeout?: number): void;
